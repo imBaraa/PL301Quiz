@@ -1,0 +1,75 @@
+Q1:
+---   <<<< ترا هذي فواصل بس عشان تفرقون بين الاكواد مو جزء من الكود
+(grade>=90) ? strcpy(msg,"Excellent") : (grade>=70) ? strcpy(msg,"Good"):strcpy(msg,"try again later");
+---
+
+Q2:
+---
+<?php 
+function check(){ 
+    if($GLOBALS['number']% 3 == 0){ 
+        return 1;
+    } 
+    else{ 
+        return 0;
+    } 
+} 
+  
+// Driver Code 
+$number = readline("Enter a number: "); 
+if (check()) 
+    echo $number . " is divisible by 3";
+
+else
+    echo $number . " is not divisible by 3";
+?>
+---
+
+Q3:
+---
+#include<stdio.h>
+int Call_Counter = 0;
+void call()
+{ ++Call_Counter;}
+void main()
+{
+int yes=1;
+while(yes)
+{
+call();
+printf("Done calling, Do you want to make another call (yes(1)/No(0)): ");
+scanf("%d",&yes);
+}
+printf("You dial %d call/calls", Call_Counter);
+}
+---
+
+Q4:
+---
+#add your name
+size = int(input('Enter number of input : '))
+arr = []
+
+print('enter your values : ')
+for _ in range(0,size):
+    arr.append(int(input('')))
+
+pos = 0
+neg = 0
+
+print("values : ",end='')
+for t in range(0, len(arr)):
+    print(arr[t],end=' ')
+
+print('')
+for i in range(0,size):
+    num = arr[i]
+    if (num < 0):
+        neg = neg +1
+    elif (num == 0):
+        continue
+    else:
+        pos = pos +1
+
+print('positive numbers are : ' + str(pos))
+print('negative numbers are : ' + str(neg))
